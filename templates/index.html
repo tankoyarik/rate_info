@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rates</title>
+</head>
+<body>
+
+{% block content %}
+  <h1>Rates</h1>
+  <h4>Hello, {{ user.username }}!</h4>
+  {% for rate in rates_list %}
+    <h3>
+      <p>{{rate.base }} to {{rate.target }}: {{ rate.price }}</p>
+    </h3>
+  {% endfor %}
+  <h2>Contact</h2>
+  <form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add rate!</button>
+  </form>
+{% endblock %}
+
+</body>
+</html>
