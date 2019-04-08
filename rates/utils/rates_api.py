@@ -36,4 +36,4 @@ if __name__ == '__main__':
     price = parser.get_ticker_pair_rate('BTC', 'USDmm')
     print(price)
 
-#Commit, commit, commit for Yarik
+#Commit, commit, commit for Yarik.
