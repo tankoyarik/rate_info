@@ -35,3 +35,5 @@ if __name__ == '__main__':
     parser = RatesApi()
     price = parser.get_ticker_pair_rate('BTC', 'USDmm')
     print(price)
+
+#Ярик дал мне таск, Дима теперь девелопер!
