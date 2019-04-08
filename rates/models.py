@@ -16,3 +16,6 @@ class Ivan(models.Model):
     pass
 
 
+class UserComments(models.Model):
+    user = models.ForeignKey("Account", on_delete=models.CASCADE)
+    comment = models.TextField()
