@@ -48,3 +48,7 @@ class RateView(TemplateView):
                 account.saved_rates.add(rate)
                 account.save()
         return HttpResponseRedirect(reverse('index'))
+
+
+class Natalya(TemplateView):
+    pass
