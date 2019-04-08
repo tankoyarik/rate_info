@@ -11,3 +11,11 @@ class Rate(models.Model):
 class Account(models.Model):
     username = models.CharField(max_length=200, unique=True)
     saved_rates = models.ManyToManyField(Rate)
+
+class Ivan(models.Model):
+    pass
+
+
+class UserComments(models.Model):
+    user = models.ForeignKey("Account", on_delete=models.CASCADE)
+    comment = models.TextField()
